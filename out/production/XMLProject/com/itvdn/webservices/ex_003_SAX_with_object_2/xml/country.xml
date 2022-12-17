@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<root>
+    <country country_code="bel">
+        <name>Belarus</name>
+        <capital>Minsk</capital>
+        <population>9000000</population>
+    </country>
+
+    <country country_code="pl">
+        <name>Poland</name>
+        <capital>Warsaw</capital>
+        <population>40000000</population>
+    </country>
+
+    <country country_code="ua">
+        <name>Ukraine</name>
+        <capital>Kiev</capital>
+        <population>45000000</population>
+    </country>
+
+
+    <country country_code="ge">
+        <name>Germany</name>
+        <capital>Berlin</capital>
+        <population>80000000</population>
+    </country>
+</root>

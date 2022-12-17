@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation = "student.xsd">
+
+    <student course = "4">
+        <name>Dima</name>
+        <last_name>Khodosevich</last_name>
+        <average_score>8.9</average_score>
+        <favoirite_subject>math</favoirite_subject>
+        <favoirite_subject>physics</favoirite_subject>
+    </student>
+
+
+    <student course = "2">
+        <name>Matvey</name>
+        <last_name>Khodosevich</last_name>
+        <average_score>7.8</average_score>
+        <favoirite_subject>history</favoirite_subject>
+        <favoirite_subject>english</favoirite_subject>
+    </student>
+
+
+</root>
