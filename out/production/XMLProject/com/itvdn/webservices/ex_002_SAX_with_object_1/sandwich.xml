@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="sandwich.xsd">
+
+    <sendwich>
+        <name>double_gamburger</name>
+        <ingridient>tomato</ingridient>
+        <ingridient>beaf</ingridient>
+        <ingridient>pasta</ingridient>
+        <ingridient>zelen</ingridient>
+        <cost>0.55</cost>
+        <weight>150</weight>
+    </sendwich>
+
+</root>
