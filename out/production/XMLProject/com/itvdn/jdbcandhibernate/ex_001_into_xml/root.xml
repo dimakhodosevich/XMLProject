@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--<!DOCTYPE root [-->
+<!--        <!ELEMENT root (table)*>-->
+<!--        <!ELEMENT table (tr|name|width|length)*>-->
+<!--        <!ELEMENT tr (td)*>-->
+<!--        <!ELEMENT td (#PCDATA)>-->
+<!--        <!ELEMENT name (#PCDATA)>-->
+<!--        <!ELEMENT width (#PCDATA)>-->
+<!--        <!ELEMENT length (#PCDATA)>-->
+<!--        ]>-->
+<!--<root>-->
+
+    <table>
+        <tr>
+            <td>Apples</td>
+            <td>Bananas</td>
+        </tr>
+
+    </table>
+
+    <table>
+        <name>Affrican coffee</name>
+        <width>120</width>
+        <length>80</length>
+    </table>
+
+
+</root>

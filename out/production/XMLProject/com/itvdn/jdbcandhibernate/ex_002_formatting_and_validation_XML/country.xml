@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<!--<!DOCTYPE root [-->
+<!--        <!ELEMENT root (country)*>-->
+<!--        <!ELEMENT country (name|capital|description)*>-->
+<!--        <!ATTLIST country-->
+<!--                countyCode CDATA #REQUIRED>-->
+<!--        <!ELEMENT name (#PCDATA)>-->
+<!--        <!ELEMENT capital (#PCDATA)>-->
+<!--        <!ELEMENT description (#PCDATA)>-->
+<!--        ]>-->
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="country.xsd">
+    <country  countyCode="bel">
+        <name>Belarus</name>
+        <capital>Minsk</capital>
+        <description>Belarus is...</description>
+        <visa_cost currency = "rub">0</visa_cost>
+    </country>
+
+    <country countyCode="ua">
+        <name>Ukraine</name>
+        <capital>Kiev</capital>
+        <description>Ukraine is...</description>
+        <visa_cost currency = "eu">54</visa_cost>
+    </country>
+
+
+    <country countyCode="pl">
+        <name>Poland</name>
+        <capital>Warsaw</capital>
+        <description>Poland is...</description>
+        <visa_cost currency = "usd">40</visa_cost>
+    </country>
+
+</root>
