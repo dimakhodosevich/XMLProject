@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<!--<!DOCTYPE root [-->
+<!--        <!ELEMENT root (country)*>-->
+<!--        <!ELEMENT country (name|capital|description)*>-->
+<!--        <!ATTLIST country-->
+<!--                countyCode CDATA #REQUIRED>-->
+<!--        <!ELEMENT name (#PCDATA)>-->
+<!--        <!ELEMENT capital (#PCDATA)>-->
+<!--        <!ELEMENT description (#PCDATA)>-->
+<!--        ]>-->
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="country.xsd">
+    <country  countyCode="bel">
+        <name>Belarus</name>
+        <capital>Minsk</capital>
+        <description>Belarus is...</description>
+
+    </country>
+    <country countyCode="ua">
+        <name>Ukraine</name>
+        <capital>Kiev</capital>
+        <description>Ukraine is...</description>
+    </country>
+
+</root>
