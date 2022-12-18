@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><books>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<books>
     <book id="01" isbn="12345">
         <title>Childshood's End</title>
         <author>Artur Clerk</author>
@@ -10,5 +11,13 @@
     <book id="03" isbn="122222">
         <title>Coves of the street</title>
         <author>Isaac</author>
+    </book>
+    <book id="777" isbn="777">
+        <title>Dima Khodosevich</title>
+        <author>Khodosevich</author>
+    </book>
+    <book id="777" isbn="777">
+        <title>Dima Khodosevich</title>
+        <author>Khodosevich</author>
     </book>
 </books>
