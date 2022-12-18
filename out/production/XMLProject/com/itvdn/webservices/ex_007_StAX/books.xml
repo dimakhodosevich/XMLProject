@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<books xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="books.xsd">
+    <book id="01" isbn="743">
+        <title>War and Peace</title>
+        <author>Lev Tolstoy</author>
+    </book>
+    <book id="02" isbn="321">
+        <title>Crime and Punishments</title>
+        <author>Fedor Dostoyenskiy</author>
+    </book>
+</books>
