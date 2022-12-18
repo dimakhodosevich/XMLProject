@@ -9,9 +9,18 @@ import org.xml.sax.SAXException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class BookHelper {
     private Document document;
@@ -34,7 +43,6 @@ public class BookHelper {
 
         for (int i = 0; i < list.getLength(); i++) {
             Book book  = new Book();
-
             String title = root.getElementsByTagName("title").item(i).getFirstChild().getTextContent();
             String author = root.getElementsByTagName("author").item(i).getFirstChild().getTextContent();
             String id = list.item(i).getAttributes().item(0).getNodeValue();
@@ -48,5 +56,30 @@ public class BookHelper {
         return books;
     }
 
+    public void addBook(Book newBook) throws FileNotFoundException, TransformerException {
+        Element root= document.getDocumentElement();
+
+        Element book = document.createElement("book");
+        Element author = document.createElement("author");
+        Element title = document.createElement("title");
+
+        book.setAttribute("id", newBook.getId());
+        book.setAttribute("isbn", String.valueOf(newBook.getIsdn()));
+        author.setTextContent(newBook.getAuthor());
+        title.setTextContent(newBook.getTitle());
+
+        book.appendChild(title);
+        book.appendChild(author);
+
+        root.appendChild(book);
+
+        DOMSource source = new DOMSource(document);
+        String file = "E:\\XMLProject\\src\\com\\itvdn\\webservices\\ex_005_DOM_with_object\\book.xml";
+        StreamResult result = new StreamResult(new FileOutputStream(file));
+
+        TransformerFactory transformerFactory = TransformerFactory.newInstance();
+        Transformer transformer = transformerFactory.newTransformer();
+        transformer.transform(source, result);
+    }
 
 }

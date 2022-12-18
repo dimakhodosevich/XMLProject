@@ -1,15 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
-<books>
-    <book id = "01" isbn = "12345">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><books>
+    <book id="01" isbn="12345">
         <title>Childshood's End</title>
         <author>Artur Clerk</author>
     </book>
-    <book id = "02" isbn = "67890">
+    <book id="02" isbn="67890">
         <title>The Merchant of Vanice</title>
         <author>William Shakespeare</author>
     </book>
-    <book id = "03" isbn = "122222">
+    <book id="03" isbn="122222">
         <title>Coves of the street</title>
         <author>Isaac</author>
     </book>
