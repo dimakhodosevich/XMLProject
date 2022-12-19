@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<employees xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation ="employees.xsd">
+
+    <employee id = "1" type = "admin">
+        <firstname>Dima</firstname>
+        <lastname>Khodosevich</lastname>
+        <age>27</age>
+        <email>dimakhodosevich95@gmail.com</email>
+    </employee>
+
+    <employee id = "2" type = "user">
+        <firstname>Matvey</firstname>
+        <lastname>Khodosevich</lastname>
+        <age>19</age>
+        <email>matveykhodosevich03@gmail.com</email>
+    </employee>
+
+
+</employees>

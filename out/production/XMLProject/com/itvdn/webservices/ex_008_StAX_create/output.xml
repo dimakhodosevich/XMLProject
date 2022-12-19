@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<books>
+    <book id="035" isdn="3232">
+        <title>Java Core</title>
+        <author>Blox</author>
+    </book>
+</books>

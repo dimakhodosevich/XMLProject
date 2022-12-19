@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema attributeFormDefault="unqualified"
+           elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="employees" type="employeesType"/>
+
+    <xs:complexType name="employeesType">
+        <xs:sequence>
+            <xs:element name="employee" type="emplType" maxOccurs="unbounded" minOccurs="0">
+        </xs:sequence>
+
+    </xs:complexType>
+
+    <xs:complexType name="emplType">
+        <xs:sequence>
+            <xs:element name ="firstname" type="xs:string"></xs:element>
+            <xs:element name ="lastname" type="xs:string"></xs:element>
+            <xs:element name ="age" type="xs:integer"></xs:element>
+            <xs:element name ="email" type="xs:string"></xs:element>
+        </xs:sequence>
+
+        <xs:attribute name = "id" type="xs:integer"></xs:attribute>
+        <xs:attribute name = "type" type="xs:string"></xs:attribute>
+    </xs:complexType>
+
+</xs:schema>
